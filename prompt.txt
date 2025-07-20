@@ -1,0 +1,42 @@
+I have JavaFx project with following folder structure:
+
+.
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── src
+│   └── main
+│       ├── java
+│       │   ├── com
+│       │   │   └── example
+│       │   │       └── demo
+│       │   │           ├── HelloApplication.java
+│       │   │           └── HelloController.java
+│       │   └── module-info.java
+│       └── resources
+│           └── com
+│               └── example
+│                   └── demo
+│                       └── hello-view.fxml
+└── target
+    ├── classes
+    │   ├── com
+    │   │   └── example
+    │   │       └── demo
+    │   │           ├── HelloApplication.class
+    │   │           ├── HelloController.class
+    │   │           └── hello-view.fxml
+    │   └── module-info.class
+    └── generated-sources
+        └── annotations
+
+
+I want to implement a user interface like in the png file I have shared. There should be a menu bar at top of the application. There should be one horizontal and one vertical scroll bar at the lower and rightmost edges. At the center I need a table like grid. Table's column and row number should be taken from Java code. When I play with these scrollbars, the table should move according to my movements but the leftmost column and upper top row should be solid and not moveable. How can I implement this kind of UI? What should be the content of .fxml file? If it is necessary you can provide Java code as well.  The application should be resizable and when I change its size, it must not mess the layouts.
+
+The must have things in this application are these:
+1 - Application must work responsive. When the user change window size etc. application must arrange everything smoothly. So I do not want you to use hardcoded positions and sizes. This means you must not set layoutX, layoutY, prefWidth, prefHeight etc.
+
+2- If something can be able to arrange with Java code, please arrange it in Java code. I do not want to use .fxml file so much because I do not want my user interface to be static.
+
+
+- https://stackoverflow.com/questions/76813277/how-to-create-responsive-desktop-applications-ui-in-javafx
